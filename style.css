@@ -1,0 +1,14 @@
+/* Header section */
+
+section {
+  padding: 20px 40px;
+}
+
+footer {
+  /* background-color: #8475ed; */
+  padding: 20px 60px;
+}
+
+footer a {
+  text-decoration: none;
+}
