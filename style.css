@@ -1,25 +1,118 @@
-/* Default style */
+:root {
+  --primary-color: #059669;
+  --off-white: #f3f4f6;
+  --dark-gray: #6b7280;
+}
 
 *,
-body,
-html {
-  box-sizing: border-box;
+html,
+body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
-/* Header section */
-
-section {
-  padding: 20px 40px;
+.section {
+  padding: 3rem 1.5rem;
 }
 
-footer {
-  /* background-color: #8475ed; */
-  padding: 20px 60px;
+.section .section-content {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-footer a {
+.section .section-content h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bg-dark {
+  background-color: var(--off-white);
+}
+/* header section styling */
+.header {
+  background-color: var(--primary-color);
+  padding: 1.5rem 1rem;
+  color: #fff;
+  border-bottom-left-radius: 2rem;
+}
+
+.header .nav-brand {
   text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.header .nav-list {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  font-size: 1rem;
+}
+
+.header .nav-list .nav-item {
+  display: inline;
+  margin: 2rem 1.5rem;
+}
+/* hero section styling */
+.section-content .section-content-img {
+  text-align: center;
+}
+
+.section-content .section-content-img .hero-img {
+  max-width: 400px;
+  width: 100%;
+}
+.section-content h1 {
+  color: var(--dark-gray);
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.section-content h1 span {
+  color: var(--primary-color);
+}
+
+/* footer styling here */
+.footer {
+  color: #fff;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top-right-radius: 2rem;
+}
+.footer h2 {
+  margin-bottom: 2rem;
+}
+.social-media-links a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+/* utilities */
+
+/* button styling */
+.btn {
+  max-width: 140px;
+  width: 100%;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
